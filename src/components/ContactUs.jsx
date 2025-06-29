@@ -67,7 +67,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-6 bg-white shadow-md rounded-xl mt-10 border-1 mb-5 ">
+    <div name="ContactUs" className="max-w-xl mx-auto p-6 bg-white shadow-md rounded-xl mt-10 border-1 mb-5 ">
       <h2 className="text-2xl font-bold mb-4 text-center">Contact Us</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input type="hidden" name="access_key" value={formData.access_key} />

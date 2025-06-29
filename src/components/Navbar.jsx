@@ -33,7 +33,7 @@ const Navbar = () => {
         },
         {
             id:5,
-        text:"Contacts",
+        text:"ContactUs",
         
         
         },
