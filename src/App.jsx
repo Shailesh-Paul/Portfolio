@@ -7,17 +7,18 @@ import Experience from './components/Experience';
 import Footer from './components/Footer';
 import ContactUs from './components/ContactUs';
 
+
 function App() {
   return (
    <>
-     <Navbar></Navbar>
-     <Home></Home>
-     <About></About>
-     <Portfolio></Portfolio>
-     <Experience></Experience>
-     <ContactUs></ContactUs>
-     <Footer></Footer>
-     
+  
+     <Navbar />
+     <Home />
+     <About />
+     <Portfolio />
+     <Experience />
+     <ContactUs />
+     <Footer />
    </>
   )
 }

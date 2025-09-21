@@ -40,3 +40,99 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Background animated gradient blobs */
+.bg-animation {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.bg-animation .blob {
+  position: absolute;
+  width: 40vmax;
+  height: 40vmax;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.6;
+  mix-blend-mode: screen;
+  transform: translate3d(0,0,0);
+}
+.bg-animation .b1 {
+  background: linear-gradient(135deg, #ff7a7a, #ffb26b);
+  left: -10vmax;
+  top: -15vmax;
+  animation: move1 12s linear infinite;
+}
+.bg-animation .b2 {
+  background: linear-gradient(135deg, #7afcff, #7a9bff);
+  right: -12vmax;
+  top: -10vmax;
+  animation: move2 14s linear infinite;
+}
+.bg-animation .b3 {
+  background: linear-gradient(135deg, #b57aff, #ff7ad1);
+  left: 20vmax;
+  bottom: -18vmax;
+  animation: move3 16s linear infinite;
+}
+
+@keyframes move1 {
+  0% { transform: translate3d(0,0,0) scale(1); }
+  50% { transform: translate3d(6vmax,6vmax,0) scale(1.08); }
+  100% { transform: translate3d(0,0,0) scale(1); }
+}
+@keyframes move2 {
+  0% { transform: translate3d(0,0,0) scale(1); }
+  50% { transform: translate3d(-6vmax,4vmax,0) scale(1.04); }
+  100% { transform: translate3d(0,0,0) scale(1); }
+}
+@keyframes move3 {
+  0% { transform: translate3d(0,0,0) scale(1); }
+  50% { transform: translate3d(-4vmax,-8vmax,0) scale(1.06); }
+  100% { transform: translate3d(0,0,0) scale(1); }
+}
+
+/* Keep content above the background */
+body > #root, .container, .max-w-screen-2xl {
+  position: relative;
+  z-index: 10;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-animation .blob {
+    animation: none !important;
+    filter: blur(40px);
+  }
+}
+
+/* Theme variables */
+:root {
+  --bg: #ffffff;
+  --text: #0f172a;
+  --nav-bg: rgba(255,255,255,0.9);
+  --splash-light: 255,210,150; /* rgb values without alpha */
+}
+html.dark, body.dark, :root.dark, .dark {
+  --bg: #071025;
+  --text: #e6f0ff;
+  --nav-bg: rgba(6,10,18,0.85);
+  --splash-dark: 170,220,255;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 220ms ease, color 220ms ease;
+}
+
+.particles-canvas { z-index: 0; position: fixed; top:0; left:0; }
+
+/* make sure main content sits above particles */
+#root, .container, .max-w-screen-2xl { z-index: 10; position: relative }
+
+/* override utility class where necessary so nav/bg follow theme */
+.bg-white { background-color: var(--nav-bg) !important }
+.site-navbar { background-color: var(--nav-bg) !important; transition: background-color 220ms ease, color 220ms ease }
+.shadow-md { box-shadow: 0 6px 20px rgba(2,6,23,0.08) }

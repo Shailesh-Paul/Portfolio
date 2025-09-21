@@ -26,19 +26,21 @@ function About() {
 
         
             <h1 className='text-green-500 font-semibold text-xl'>Skills & Expertise</h1>
-            <p>Proficient in [Programming Languages] Experienced with [Software Tools/Technologies] Strong grasp of [Design Principles/Concepts] Excellent problem-solving skills Effective communicator and collaborato</p>
+            <p>Proficient in Java and  Experienced with React.js Strong grasp of DSA . Excellent problem-solving skills Effective communicator and collaborator.</p>
             <br />
         
             <h1 className='text-green-500 font-semibold text-xl'>Professional Experience</h1>
-            <p>As I am in a 2nd Year student , I have 0 Years of experience.</p>
+            <p>As I am in a 3rd Year student , I have 0 Years of experience.</p>
+            <p>I am currently looking up for Interships for gaining some experiences and using my theoretical knowledge into practical using industries level project. </p>
             <br />
         
             <h1 className='text-green-500 font-semibold text-xl'>Achievements & Awards</h1>
-            <p>[Award/Recognition], [Organization/Institution], [Year] [Achievement], [Organization/Platform], [Year]</p>
+            <p>NPTEL(Introduction to Internet Of Things) Gold Medalist, IIT Kharagpur, 2025 </p>
+            <p>NPTEL (Cloud Computing) , Silver , IIT Kharagpur , 2025 </p>
             <br />
         
             <h1 className='text-green-500 font-semibold text-xl'>Mission Statement</h1>
-            <p>My mission is to leverage my skills and creativity to deliver innovative [Your Field] solutions that exceed client expectations and contribute positively to the digital landscape. I am committed to continuous learning and growth, always seeking new challenges and opportunities to expand my horizons.</p>
+            <p>My mission is to leverage my skills and creativity to deliver innovative Software Development solutions that exceed client expectations and contribute positively to the digital landscape. I am committed to continuous learning and growth, always seeking new challenges and opportunities to expand my horizons.</p>
             <br />
         
     </div>

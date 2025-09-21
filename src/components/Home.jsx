@@ -40,7 +40,7 @@ function Home() {
 
          <br/> <br />
         </div >
-         <p className='text-sm md:text-md text-justify'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, beatae pariatur error laudantium eaque vitae quam. Unde rerum quis aut at reiciendis officiis libero eaque exercitationem impedit. Velit eveniet temporibus, alias vero illum doloremque similique aspernatur est pariatur nulla sapiente optio corporis ea, ex vel quasi assumenda minima adipisci, omnis repudiandae dolor! Distinctio debitis ipsa aperiam at accusamus? Exercitationem voluptatibus iusto labore alias quidem odit, in eaque totam magnam fugit sit ullam vitae, maiores tempore officia quisquam!</p>
+         <p className='text-sm md:text-md text-justify'> "Hi, I'm Shailesh Kumar. A full-stack developer passionate about building clean, efficient, and user-friendly web applications. Welcome to my digital space."</p>
     <br />
     {/* Social media icons */}
 
